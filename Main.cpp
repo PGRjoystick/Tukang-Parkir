@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 		cout <<"||------------------------------------------------||\n";
 		cout <<"||           SELAMAT DATANG DI PARKIRAN           ||\n";
 		cout <<"||---------------------|BY|-----------------------||\n";
-    	cout <<"||               Biji Melayang Team               ||\n";
+    		cout <<"||               Biji Melayang Team               ||\n";
 		cout <<"||                   Kelompok 3                   ||\n";
 		cout <<"====================================================\n";
 		cout <<"                                                    \n";
@@ -64,8 +64,7 @@ int main(int argc, char *argv[])
 		cout << "       HATI - HATI DALAM PERJALANAN ANDA            \n";
 		cout << "                                                    \n";
 		cout << "----------------------------------------------------\n";
-		getch();
-        return 0;
-		}
+	return 0;
+}
 
 
