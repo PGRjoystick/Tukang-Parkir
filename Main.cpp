@@ -31,42 +31,42 @@ int main(int argc, char *argv[])
 
 switch (kendaraan)
     {
-		case 1:
+	case 1:
 		{
-			harga=2000*jam;
-            cout <<"----------------------------------------------------\n";
-            cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
-            cout <<"             WAKTU PARKIR = "<<jam;
-            cout <<" JAM\n";
-            cout <<"----------------------------------------------------\n";
+		harga=2000*jam;
+            	cout <<"----------------------------------------------------\n";
+            	cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
+            	cout <<"             WAKTU PARKIR = "<<jam;
+            	cout <<" JAM\n";
+        	cout <<"----------------------------------------------------\n";
 
         }
         break;
         case 2:
         {
-            harga=3000*jam;
-            cout <<"----------------------------------------------------\n";
-            cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
-            cout <<"             WAKTU PARKIR = "<<jam;
-            cout <<" JAM\n";
-            cout <<"----------------------------------------------------\n";
+            	harga=5000*jam;
+            	cout <<"----------------------------------------------------\n";
+            	cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
+            	cout <<"             WAKTU PARKIR = "<<jam;
+  		cout <<" JAM\n";
+            	cout <<"----------------------------------------------------\n";
         }
         break;
         default:
         {
-            system("cls");
-            cout <<"-----------MAAF ANDA SALAH MEMASUKAN KODE-----------\n";
-            cout << "Input Data lagi ? (y/n):";
-            cin >> yt;
+            	system("cls");
+            	cout <<"-----------MAAF ANDA SALAH MEMASUKAN KODE-----------\n";
+            	cout << "Input Data lagi ? (y/n):";
+            	cin >> yt;
 
-            if (yt=='y'||yt=='Y')
-            {
-                system("cls");
-                goto code;
-            }
-            else
-            {
-                goto finish;
+            	if (yt=='y'||yt=='Y')
+            	{
+                	system("cls");
+                	goto code;
+            	}
+            	else
+            	{
+                	goto finish;
             }
         }
     }
