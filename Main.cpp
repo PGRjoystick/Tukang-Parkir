@@ -4,67 +4,80 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-		int a,b;
-		cout <<" ===================================================\n";
-		cout <<"||------------------------------------------------||\n";
-		cout <<"||           SELAMAT DATANG DI PARKIRAN           ||\n";
-		cout <<"||---------------------|BY|-----------------------||\n";
-    		cout <<"||               Biji Melayang Team               ||\n";
-		cout <<"||                   Kelompok 3                   ||\n";
-		cout <<"====================================================\n";
-		cout <<"                                                    \n";
-		cout <<"                                                    \n";
-		cout <<"JENIS KENDARAAN\n";
-		cout <<"1. MOTOR \n";
-		cout <<"2. MOBIL \n";
-		cout <<"MASUKAN PILIHAN KENDAARAAN (1/2) : ";
-		cin >>a;
-		cout <<"----------------------------------------------------\n";
-		cout <<"WAKTU PARKIR               : ";
-		cin >>b;
-		cout <<"----------------------------------------------------\n";
+	int kendaraan,jam,harga;
+	char yt;
+	cout <<" ===================================================\n";
+	cout <<"||------------------------------------------------||\n";
+	cout <<"||        SELAMAT DATANG DI TUKANG PARKIRAN       ||\n";
+	cout <<"||---------------------|BY|-----------------------||\n";
+       	cout <<"||               Biji Melayang Team               ||\n";
+	cout <<"||                   Kelompok 3                   ||\n";
+	cout <<"====================================================\n";
+	cout <<"                                                    \n";
+	cout <<"                                                    \n";
+	code:
+	cout <<"JENIS KENDARAAN\n";
+	cout <<"1. MOTOR \n";
+	cout <<"2. MOBIL \n";
+	zero:
+	cout <<"MASUKAN PILIHAN KENDAARAAN (1/2) : ";
+	cin >>kendaraan;
+	cout <<"----------------------------------------------------\n";
+	cout <<"WAKTU PARKIR               : ";
+	cin >>jam;
+	cout <<"----------------------------------------------------\n";
 
 
-		if(a==1)
+switch (kendaraan)
+    {
+		case 1:
 		{
-			if(b<=2)
-			{
-				cout <<"----------------------------------------------------\n";
-				cout <<"             HARGA PARKIR = "<<1500<<endl;
-				cout <<"----------------------------------------------------\n";
-			}
-			else
-			{
-				cout <<"----------------------------------------------------\n";
-				cout <<"             HARGA PARKIR = "<<1500+(b-2)*2000<<endl;
-				cout <<"----------------------------------------------------\n";
-			}
-		}
+			harga=2000*jam;
+            cout <<"----------------------------------------------------\n";
+            cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
+            cout <<"             WAKTU PARKIR = "<<jam;
+            cout <<" JAM\n";
+            cout <<"----------------------------------------------------\n";
 
-		else if (a==2)
-		{
+        }
+        break;
+        case 2:
+        {
+            harga=3000*jam;
+            cout <<"----------------------------------------------------\n";
+            cout <<"             HARGA PARKIR = Rp. "<<harga <<endl;
+            cout <<"             WAKTU PARKIR = "<<jam;
+            cout <<" JAM\n";
+            cout <<"----------------------------------------------------\n";
+        }
+        break;
+        default:
+        {
+            cout <<"-----------MAAF ANDA SALAH MEMASUKAN KODE-----------\n";
+            goto zero;
+        }
+    }
+        cout << "Input Data lagi ? (y/n):";
+        cin >> yt;
 
-			if(b<=2)
-			{
-				cout <<"----------------------------------------------------\n";
-				cout <<"             HARGA PARKIR = "<<2500<<endl;
-				cout <<"----------------------------------------------------\n";
-			}
-			else
-			{
-				cout <<"----------------------------------------------------\n";
-				cout <<"             HARGA PARKIR = "<<2500+(b-2)*1500<<endl;
-				cout <<"----------------------------------------------------\n";
-			}
-		}
-		cout << "----------------------------------------------------\n";
-		cout << "                                                    \n";
-		cout << "                 TERIMA KASIH                       \n";
-		cout << "               SELAMAT BERKENDARA                   \n";
-		cout << "       HATI - HATI DALAM PERJALANAN ANDA            \n";
-		cout << "                                                    \n";
-		cout << "----------------------------------------------------\n";
-	return 0;
+        if (yt=='y'||yt=='Y')
+        {
+            goto code;
+        }
+        else
+        {
+            goto finish;
+        }
+
+
+        finish:
+	cout << "----------------------------------------------------\n";
+	cout << "                                                    \n";
+	cout << "                 TERIMA KASIH                       \n";
+	cout << "               SELAMAT BERKENDARA                   \n";
+	cout << "       HATI - HATI DALAM PERJALANAN ANDA            \n";
+	cout << "                                                    \n";
+	cout << "----------------------------------------------------\n";
+    getch();
+return 0;
 }
-
-
